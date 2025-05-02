@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#hero{
+    background: url(https://images.unsplash.com/photo-1589378884250-431463f05637?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+
+}
+.heroContent{
+    color: black;
+    background-color: rgb(255, 255, 255, 0.7); 
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    
+   
+}
