@@ -3,10 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#ukusi h2 ::after{
+    content:"";
+    height: 2px;
+    width: 1000px;
+    color: black;
+}
+
 #hero{
     background: url(https://images.unsplash.com/photo-1589378884250-431463f05637?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
     no-repeat center/cover;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +28,45 @@
     padding: 20px;
     width: 50%;
     margin: 0 auto;
-    
+
    
 }
+
+.ukus img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+.ukus img :hover{
+    transform: rotateY(180);
+}
+
+#ukusi{
+    background-color: #FFC5D3;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 4px 3px  grey;
+    
+}
+
+.ukusi-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+
+.ukus{
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
