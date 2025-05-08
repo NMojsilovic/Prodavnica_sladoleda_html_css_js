@@ -38,11 +38,11 @@
     border-radius: 50%;
     text-align: center;
     margin-bottom: 5px;
-    transition: transform 0.8s ease;
+    transition: transform 1s ease;
     transform-style: preserve-3d;
 }
-.ukus img :hover{
-    transform: rotateY(180);
+.ukus img:hover{
+    transform: rotateY(180deg);
 }
 
 #ukusi{
@@ -67,6 +67,65 @@
     padding: 15px;
 }
 
+#najprodavanije {
+    background-color: #FDFD96;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+#najprodavanije img{
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 4px 3px  grey;
+    border-radius: 20px;
+}
 
+.nutritivne-vrednosti{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    gap: 5px;
+    max-width: 300px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+.cena{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.alergeni{
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.nalepnica{
+    background-color: red;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-size: large;
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    animation: swing 2s infinite ease-in-out ;
+    transform-origin: top center;
+}
+
+@keyframes swing{
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(5deg);}
+    50% { transform: rotate(0deg);}
+    75% { transform: rotate(-5deg);}
+    100% { transform: rotate(0deg);}
+}
 
 
