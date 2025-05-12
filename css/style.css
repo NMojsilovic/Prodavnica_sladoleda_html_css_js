@@ -128,4 +128,23 @@
     100% { transform: rotate(0deg);}
 }
 
+#zastoBasMi {
+    background-color: #FFC5D3;
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 4px 3px  rgb(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.oNama-slika img{
+    width: 100%;
+    height: auto;
+    display: block;
+   border-radius: 20px 0 0 20px;
+}
+
+.oNama{
+    padding: 20px;
+}
