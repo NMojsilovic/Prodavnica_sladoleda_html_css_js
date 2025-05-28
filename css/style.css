@@ -12,9 +12,9 @@
 }
 
 #hero{
-    background: url(https://images.unsplash.com/photo-1589378884250-431463f05637?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    background: url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?q=80&w=2103&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
     no-repeat center/cover;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,7 +140,7 @@
 
 .oNama-slika img{
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
    border-radius: 20px 0 0 20px;
 }
@@ -148,3 +148,149 @@
 .oNama{
     padding: 20px;
 }
+/* Pocetak sekcije preporuke */
+
+#preporuke{
+background-color: #FDFD96;
+text-align: center;
+padding: 20px;
+}
+
+.preporuke-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 20px auto;
+   
+}
+
+.preporuka{
+    background-color: #F9E4B7;
+    padding: 20px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 0px auto;
+    box-shadow: 4px 3px  rgb(0, 0, 0, 0.4);
+    opacity: 0;
+}
+.preporuka:nth-child(1){
+    animation: slideInLeft 1s ease forwards;
+    animation-delay:0.2s;
+}
+.preporuka:nth-child(2){
+    animation: slideInRight 1s ease forwards;
+    animation-delay:0.4s;
+}
+.preporuka:nth-child(3){
+    animation: slideInRight 1s ease forwards;
+    animation-delay:0.6s;
+}
+@keyframes slideInLeft{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+@keyframes slideInRight{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    
+}
+
+.preporuka-osoba img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.preporuka-osoba{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+/* Kraj sekcije preporuke */
+
+/* Pocetak sekcije registracija */
+
+#registracija{
+    background: url("https://images.unsplash.com/photo-1717853411695-c9f844e1df46?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGljZSUyMGNyZWFtJTIwaG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D")
+    no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forma{
+    background-color: rgb(255, 255, 255, 0.7);
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.input i{
+    margin-right: 10px;
+    font-size: 25px;
+}
+.input input{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 250px;
+}
+
+.input input:focus{
+    outline: none;
+}
+.input select{
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.forma h2{
+    margin-bottom: 15px;
+}
+
+.button{
+    border-radius: 10px;
+    padding: 13px;
+    margin: 10px auto;
+    border: none;
+    background-image: linear-gradient(to right, #FFC5D3, white);
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: translateY(-2px);
+    background-image: linear-gradient(to right, white, #FFC5D3);
+}
+
+
+
