@@ -292,5 +292,41 @@ padding: 20px;
     background-image: linear-gradient(to right, white, #FFC5D3);
 }
 
+/* Kraj sekcije registracija */
+
+/* Pocetak sekcije prijava */
+
+#prijava{
+    background: url("https://images.unsplash.com/photo-1717853411695-c9f844e1df46?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGljZSUyMGNyZWFtJTIwaG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D")
+    no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forma-prijava{
+    background-color: rgb(255, 255, 255, 0.7);
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.dugme-prijava{
+    border-radius: 10px;
+    padding: 13px;
+    margin: 10px auto;
+    border: none;
+    background-image: linear-gradient(to right, #FFC5D3, white);
+    cursor: pointer;
+}
+
+.forma-prijava h2{
+    margin-bottom: 15px;
+}
+
+
 
 
